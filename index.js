@@ -41,8 +41,6 @@ Highrating.forEach((Highrating) =>
 ); */
 
 const Eletronics = products.filter(
-  (product) => product.category === "Electronics"
+  (product) => product.category === "Electronics" && product.price < 1000
 );
-products.filter((product) => product.price < 1000);
-
-products.forEach(() => console.log("Electronics Below 1000:", Eletronics));
+Eletronics.forEach((item) => console.log("Electronics Below 1000:", item));
