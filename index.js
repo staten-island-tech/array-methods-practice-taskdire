@@ -45,4 +45,4 @@ const Eletronics = products.filter(
 );
 products.filter((product) => product.price < 1000);
 
-products.forEach((products) => console.log("Electronics Below 1000:", ele));
+products.forEach(() => console.log("Electronics Below 1000:", Eletronics));
